@@ -10,34 +10,146 @@ html {
   background-color: color(white);
 }
 
-.container {
+.o-container {
   width: 90%;
   max-width: 960px;
   margin: 0 auto;
 }
 
-.vertical-align--table {
-  width: 100%;
-  height: 100%;
-  display: table;
-  .vertical-align--table-cell{
-    display: table-cell;
-    vertical-align: middle;
+.u-lead {
+  text-transform: uppercase;
+  color: color(black);
+  font-weight: 300;
+
+  .cs__result & {
+    color: color(white);
   }
 }
 
-html, body {
-  height: 100%;
+.cs__situation {
+  padding: base(2) 0 base(4);
+
+  @at-root #{&}__text-wrapper {
+    position: relative;
+  }
+
+  @at-root #{&}__text {
+    text-align: center;
+  }
+
+  @at-root #{&}__icon {
+    position: absolute;
+    left: base(-2.5);
+    top: base(-0.75);
+    width: base(3);
+    height: auto;
+  }
+}
+
+.cs__header {
+  padding: base(4) 0 base(2);
   text-align: center;
-}
 
-.grid{
-  margin: base(2) 0;
-
-  div {
-    height: base(2);
-    margin-bottom: $gutter-width;
-    background-clip: content-box;
-    background-color: darken(color(white), 12);  
+  @at-root #{&}__logo {
+    height: 86px;
+    width: auto;
   }
 }
+
+.cs__hero {
+  position: relative;
+  text-align: center;
+
+  @at-root #{&}__image {
+
+  }
+
+  &:before {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: base(-2);
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: base(8);
+    background: linear-gradient(to bottom, rgba(#777, 0.5), rgba(#999, 0));
+  }
+}
+
+.cs__action {
+  padding: base(4) 0;
+  
+  @at-root #{&}__text-wrapper {
+    position: relative;
+  }
+
+  @at-root #{&}__text {
+    text-align: center;
+  }
+
+  @at-root #{&}__icon {
+    position: absolute;
+    left: base(-2.5);
+    top: base(-0.75);
+    width: base(3);
+    height: auto;
+  }
+}
+
+.cs__result {
+  position: relative;
+
+  padding: base(6) 0 base(20);
+
+  background: url(../images/cs-texture.png) repeat, rgba(color(black), 1);
+  color: color(light);
+
+  @at-root #{&}__text-wrapper {
+    position: relative;
+  }
+
+  @at-root #{&}__icon {
+    position: absolute;
+    left: base(-2.5);
+    top: base(-0.75);
+    width: base(3);
+    height: auto;
+  }
+
+  @at-root #{&}__launch {
+    position: absolute;
+    left: 0;
+    bottom: base(4);
+
+    display: block;
+    width: 75%;
+    padding: base(1.5) 0 base(1.5) 8%;
+    background: rgba(color(blue), 0.4);
+
+    color: color(white);
+    line-height: base(3);
+    letter-spacing: base(0.2);
+    text-decoration: none;
+    text-transform: uppercase;
+    @include font-size(20);
+  }
+
+  @at-root #{&}__launch-icon {
+    float: left;
+    width: base(3);
+    height: auto;
+    margin-top: base(0);
+    margin-right: base(2);
+  }
+
+  @at-root #{&}__image {
+    position: absolute;
+    right: 15%;
+    bottom: 0;
+    width: 35%;
+    max-width: 297px;
+
+  }
+}
+

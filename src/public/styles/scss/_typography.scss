@@ -55,7 +55,7 @@ html {
 
 body {
   line-height: 1.8em;
-  @include font($museo, $base-font-size, 300);
+  @include font($museo, $base-font-size, 100);
 }
 
 ::selection {
@@ -68,9 +68,9 @@ body {
   margin-top: 0;
   margin-bottom: base(1);
   //text-rendering: optimizeLegibility;
-  color:  color(text);
+  color:  color(black);
   line-height: 1.1em;
-  @include font($museo, 16, 300);
+  @include font($museo, 16, 100);
   &::selection{
     //color: #000;
   }

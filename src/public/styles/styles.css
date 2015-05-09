@@ -519,14 +519,14 @@ pre, table, fieldset, hr {
   font-style: normal;
 }
 html {
-  color: #3a3a3a;
+  color: #6a6a6a;
   font-size: 16px;
 }
 
 body {
   line-height: 1.8em;
   font-family: "museo_sans", serif;
-  font-weight: 300;
+  font-weight: 100;
   font-size: 16px;
   font-size: 1rem;
 }
@@ -546,10 +546,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 16px;
-  color: #3a3a3a;
+  color: #231F20;
   line-height: 1.1em;
   font-family: "museo_sans", serif;
-  font-weight: 300;
+  font-weight: 100;
   font-size: 16px;
   font-size: 1rem;
 }
@@ -585,36 +585,127 @@ h6 {
 }
 
 html {
-  background-color: whitesmoke;
+  background-color: #fff;
 }
 
-.container {
+.o-container {
   width: 90%;
   max-width: 960px;
   margin: 0 auto;
 }
 
-.vertical-align--table {
-  width: 100%;
-  height: 100%;
-  display: table;
+.u-lead {
+  text-transform: uppercase;
+  color: #231F20;
+  font-weight: 300;
 }
-.vertical-align--table .vertical-align--table-cell {
-  display: table-cell;
-  vertical-align: middle;
+.cs__result .u-lead {
+  color: #fff;
 }
 
-html, body {
-  height: 100%;
+.cs__situation {
+  padding: 32px 0 64px;
+}
+.cs__situation__text-wrapper {
+  position: relative;
+}
+.cs__situation__text {
   text-align: center;
 }
-
-.grid {
-  margin: 32px 0;
+.cs__situation__icon {
+  position: absolute;
+  left: -40px;
+  top: -12px;
+  width: 48px;
+  height: auto;
 }
-.grid div {
-  height: 32px;
-  margin-bottom: 20px;
-  background-clip: content-box;
-  background-color: #d6d6d6;
+
+.cs__header {
+  padding: 64px 0 32px;
+  text-align: center;
+}
+.cs__header__logo {
+  height: 86px;
+  width: auto;
+}
+
+.cs__hero {
+  position: relative;
+  text-align: center;
+}
+.cs__hero:before {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: -32px;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 128px;
+  background: -webkit-linear-gradient(top, rgba(119, 119, 119, 0.5), rgba(153, 153, 153, 0));
+  background: linear-gradient(to bottom, rgba(119, 119, 119, 0.5), rgba(153, 153, 153, 0));
+}
+
+.cs__action {
+  padding: 64px 0;
+}
+.cs__action__text-wrapper {
+  position: relative;
+}
+.cs__action__text {
+  text-align: center;
+}
+.cs__action__icon {
+  position: absolute;
+  left: -40px;
+  top: -12px;
+  width: 48px;
+  height: auto;
+}
+
+.cs__result {
+  position: relative;
+  padding: 96px 0 320px;
+  background: url(../images/cs-texture.png) repeat, #231f20;
+  color: #bbb;
+}
+.cs__result__text-wrapper {
+  position: relative;
+}
+.cs__result__icon {
+  position: absolute;
+  left: -40px;
+  top: -12px;
+  width: 48px;
+  height: auto;
+}
+.cs__result__launch {
+  position: absolute;
+  left: 0;
+  bottom: 64px;
+  display: block;
+  width: 75%;
+  padding: 24px 0 24px 8%;
+  background: rgba(40, 168, 224, 0.4);
+  color: #fff;
+  line-height: 48px;
+  letter-spacing: 3.2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+.cs__result__launch-icon {
+  float: left;
+  width: 48px;
+  height: auto;
+  margin-top: 0px;
+  margin-right: 32px;
+}
+.cs__result__image {
+  position: absolute;
+  right: 15%;
+  bottom: 0;
+  width: 35%;
+  max-width: 297px;
 }
