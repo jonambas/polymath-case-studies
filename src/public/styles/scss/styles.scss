@@ -64,21 +64,24 @@ html {
     width: 90%;
     max-width: 960px;
   }
+
+  &:before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+  }
   
   &.cs__hero--biologos {
     &:before {
-      display: block;
-      content: "";
-      position: absolute;
       bottom: base(-2);
-      left: 0;
-      z-index: -1;
-      width: 100%;
       height: base(8);
       background: linear-gradient(to bottom, rgba(#777, 0.5), rgba(#999, 0));
     }
   }
-  
+
   &.cs__hero--charis {
     margin-bottom: base(-6); 
 
@@ -87,6 +90,18 @@ html {
       height: 75.5%;
       background: url(../images/charis/hero-background.png) repeat-x;
       background-size: contain;
+      background-position: 0 0;
+    }
+  }
+
+  &.cs__hero--harvest {
+    margin-bottom: base(-6); 
+
+    &:before {
+      bottom: 21.5%;
+      height: 75.5%;
+      background: url(../images/harvest/hero-background.jpg) repeat-x;
+      background-size: cover;
       background-position: 0 0;
     }
   }  
@@ -163,8 +178,17 @@ html {
     right: 15%;
     bottom: 0;
     width: 35%;
-    max-width: 320px;
+    max-width: 350px;
+  }
+  
+  &.cs__result--biologos {
+    .cs__result__image {
+      max-width: 320px;
+    }
+  }
 
+  &.cs__result--harvest {
+    padding: base(6) 0 base(11);
   }
 }
 
