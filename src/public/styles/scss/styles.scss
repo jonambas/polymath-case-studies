@@ -74,7 +74,7 @@ html {
     width: 100%;
   }
   
-  &.cs__hero--biologos {
+  .cs__wrapper--biologos & {
     &:before {
       bottom: base(-2);
       height: base(8);
@@ -82,7 +82,7 @@ html {
     }
   }
 
-  &.cs__hero--charis {
+  .cs__wrapper--charis & {
     margin-bottom: base(-6); 
 
     &:before {
@@ -94,7 +94,7 @@ html {
     }
   }
 
-  &.cs__hero--harvest {
+  .cs__wrapper--harvest & {
     margin-bottom: base(-6); 
 
     &:before {
@@ -181,13 +181,13 @@ html {
     max-width: 350px;
   }
   
-  &.cs__result--biologos {
+  .cs__wrapper--biologos & {
     .cs__result__image {
       max-width: 320px;
     }
   }
 
-  &.cs__result--harvest {
+  .cs__wrapper--harvest & {
     padding: base(6) 0 base(11);
   }
 }
