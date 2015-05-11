@@ -131,7 +131,7 @@ html {
       height: base(8);
       background: linear-gradient(to bottom, rgba(#777, 0.5), rgba(#999, 0));
     }
-  }  
+  }
 }
 
 .cs__action {
@@ -151,6 +151,30 @@ html {
     top: base(-0.75);
     width: base(3);
     height: auto;
+  }
+
+  .cs__wrapper--values-and-capitalism & { 
+    //background: url(../images/values-and-capitalism/hero-background.png) no-repeat;
+    background: #f5f5f5;
+    background-size: cover;
+    position: relative;
+
+    .cs__action__text {
+      text-align: left;
+    }
+
+    .cs__action__text-wrapper {
+      margin-top: base(10);
+      margin-bottom: base(16);
+    }
+
+    .cs__hero__image {
+      position: absolute;
+      top: base(-3);
+      left: 10%;
+      max-width: 360px;
+      width: 25%;
+    }
   }
 }
 
@@ -213,6 +237,21 @@ html {
       max-width: 320px;
     }
   }
+  
+  .cs__wrapper--values-and-capitalism & {
+    padding: base(6) 0 base(20);
+    .cs__result__image {
+      
+      right: 0;
+      bottom: 0;
+      width: 50%;
+      max-width: 700px;
+    }
+
+    .cs__result__launch {
+      bottom: base(8);
+    }
+  }
 
   .cs__wrapper--harvest & {
     padding: base(6) 0 base(11);
@@ -242,9 +281,6 @@ html {
 
     .cs__result__text-wrapper {
       text-align: center;
-      display: block;
-      margin: 0 auto;
-      width: 66%;
     }
 
     .cs__result__launch {
