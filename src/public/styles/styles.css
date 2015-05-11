@@ -631,6 +631,9 @@ html {
 .cs__wrapper--harvest .cs__header__logo {
   height: 111px;
 }
+.cs__wrapper--values-and-capitalism .cs__header__logo {
+  height: 170px;
+}
 
 .cs__hero {
   position: relative;
