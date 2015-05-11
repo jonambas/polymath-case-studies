@@ -628,6 +628,9 @@ html {
   height: 86px;
   width: auto;
 }
+.cs__wrapper--harvest .cs__header__logo {
+  height: 111px;
+}
 
 .cs__hero {
   position: relative;
@@ -670,6 +673,25 @@ html {
   background: url(../images/harvest/hero-background.jpg) repeat-x;
   background-size: cover;
   background-position: 0 0;
+}
+.cs__wrapper--reimagine .cs__hero:before {
+  bottom: 12%;
+  height: 100%;
+  background: url(../images/reimagine/hero-background.png) no-repeat;
+  background-size: cover;
+  background-position: 50% 0%;
+}
+.cs__wrapper--reimagine .cs__hero:after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  top: 88%;
+  height: 128px;
+  background: -webkit-linear-gradient(top, rgba(119, 119, 119, 0.5), rgba(153, 153, 153, 0));
+  background: linear-gradient(to bottom, rgba(119, 119, 119, 0.5), rgba(153, 153, 153, 0));
 }
 
 .cs__action {
@@ -740,4 +762,62 @@ html {
 }
 .cs__wrapper--harvest .cs__result {
   padding: 96px 0 176px;
+}
+.cs__wrapper--reimagine .cs__result {
+  background: none;
+  color: inherit;
+  padding: 0px 0 160px;
+}
+.cs__wrapper--reimagine .cs__result:before {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: -webkit-linear-gradient(bottom, rgba(119, 119, 119, 0.5), rgba(153, 153, 153, 0));
+  background: linear-gradient(to top, rgba(119, 119, 119, 0.5), rgba(153, 153, 153, 0));
+}
+.cs__wrapper--reimagine .cs__result .u-lead {
+  color: inherit;
+}
+.cs__wrapper--reimagine .cs__result .cs__result__text-wrapper {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 66%;
+}
+.cs__wrapper--reimagine .cs__result .cs__result__launch {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 64px;
+  padding: 12px 0 16px;
+  padding-left: 0;
+  color: #231F20;
+}
+.cs__wrapper--reimagine .cs__result .cs__result__launch-icon {
+  float: none;
+  position: relative;
+  top: 16px;
+  margin-right: 16px;
+}
+.cs__wrapper--reimagine .cs__result .cs__result__image {
+  position: static;
+  display: block;
+  margin: 0 auto 32px;
+  width: 90%;
+  max-width: none;
+}
+
+._link {
+  display: block;
+  padding: 16px;
+  text-transform: uppercase;
+  color: #28A8E0;
+  font-size: 1.5em;
+}
+._link:first-of-type {
+  margin-top: 32px;
 }

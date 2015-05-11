@@ -53,6 +53,10 @@ html {
   @at-root #{&}__logo {
     height: 86px;
     width: auto;
+
+    .cs__wrapper--harvest & {
+      height: 111px;
+    }
   }
 }
 
@@ -103,6 +107,29 @@ html {
       background: url(../images/harvest/hero-background.jpg) repeat-x;
       background-size: cover;
       background-position: 0 0;
+    }
+  }
+
+  .cs__wrapper--reimagine & { 
+    &:before {
+      bottom: 12%;
+      height: 100%;
+      background: url(../images/reimagine/hero-background.png) no-repeat;
+      background-size: cover;
+      background-position: 50% 0%;
+    }
+
+    &:after {
+      display: block;
+      content: "";
+      position: absolute;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+
+      top: 88%;
+      height: base(8);
+      background: linear-gradient(to bottom, rgba(#777, 0.5), rgba(#999, 0));
     }
   }  
 }
@@ -190,5 +217,73 @@ html {
   .cs__wrapper--harvest & {
     padding: base(6) 0 base(11);
   }
+
+  .cs__wrapper--reimagine & {
+    background: none;
+    color: inherit;
+    padding: base(0) 0 base(10);
+
+    &:before {
+      display: block;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: 100%;
+      height: 40%;
+
+      background: linear-gradient(to top, rgba(#777, 0.5), rgba(#999, 0));
+    }
+
+    .u-lead {
+      color: inherit;
+    }
+
+    .cs__result__text-wrapper {
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      width: 66%;
+    }
+
+    .cs__result__launch {
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      line-height: base(4);
+      padding: base(0.75) 0 base(1);
+      padding-left: 0;
+      color: color(black);
+    }
+
+    .cs__result__launch-icon {
+      float: none;
+      position: relative;
+      top: base(1);
+      margin-right: base(1);
+    }
+
+    .cs__result__image {
+      position: static;
+      display: block;
+      margin: 0 auto base(2);
+      width: 90%;
+      max-width: none;
+    }
+  }
 }
 
+
+
+//temp
+._link {
+  display: block;
+  padding: base(1);
+  text-transform: uppercase;
+  color: color(blue);
+  font-size: 1.5em;
+  &:first-of-type {
+    margin-top: base(2);
+  }
+}
